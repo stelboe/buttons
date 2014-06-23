@@ -2,50 +2,76 @@
 <html>
 <head>
     <title>Buttons</title>
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="../devlop/bower_components/font-awesome/css/font-awesome.css"/>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="js/custom.js"></script>
 
 </head>
 <body>
-    <div id="first_element">
-        <h1>Buttons</h1>
-        <h2>border-radius</h2>
-        Sharp -> soft-rounded -> medium-rounded -> rounded<br>
-            <button class="but sharp">Test2</button>
-            <button class="but soft-rounded">Test3</button>
-            <button class="but medium-rounded">Test4</button>
-            <button class="but rounded">Test5</button>
+<div id="first_element">
+    <h1>Buttons</h1>
 
-        <h2>size</h2>
-        small-sized -> medium-sized -> large-sized<br>
-        <button class="but small-sized">Test2</button>
-        <button class="but medium-sized">Test3</button>
-        <button class="but large-sized">Test4</button>
-        block-buttons
+    <h2>border-radius</h2>
+    Sharp -> soft-rounded -> medium-rounded -> rounded<br>
+    <button class="but sharp">Test2</button>
+    <button class="but soft-rounded">Test3</button>
+    <button class="but medium-rounded">Test4</button>
+    <button class="but rounded">Test5</button>
 
-        <h2>ColorTypes</h2>
-        standard -> text-only -> warning -> alert - information -> success -> primary -> secondary<br>
-        <button class="but">Button</button>
-        <button class="but text-only">Button</button>
-        <button class="but warning">Button</button>
-        <button class="but alert">Button</button>
-        <button class="but information">Button</button>
-        <button class="but success">Button</button>
-        <button class="but primary">Button</button>
-        <button class="but secondary">Button</button>
-
-        <h2>ButtonGroup / Dropdown</h2>
-        <button class="but rounded large-sized">YOLO</button>
-
-        <h2>SpecialElements</h2>
-        disable, hidden, active, loading...
-        <h2>3D, shadow</h2>
+    <h2>size</h2>
+    small-sized -> medium-sized -> large-sized<br>
+    <button class="but small-sized">Test2</button>
+    <button class="but medium-sized">Test3</button>
+    <button class="but large-sized">Test4</button><br>
+    full-width -<i>div with 300px</i>
+    <div style="width: 300px">
+        <button class="but full-width alert sharp">Button</button>
     </div>
-    <div id="second_element">
 
-    </div>
-    <div id="third_element">
+    <h2>ColorTypes</h2>
+    standard -> text-only -> warning -> alert - information -> success -> primary -> secondary<br>
+    <button class="but">Button</button>
+    <button class="but text-only">Button</button>
+    <button class="but warning">Button</button>
+    <button class="but alert">Button</button>
+    <button class="but information">Button</button>
+    <button class="but success">Button</button>
+    <button class="but primary">Button</button>
+    <button class="but secondary">Button</button>
 
-    </div>
+    <h2>SpecialElements</h2>
+
+    disabled<br>
+    <button class="but disabled">Button</button>
+    <button class="but text-only disabled">Button</button>
+    <button class="but warning disabled">Button</button>
+
+    <br><br>
+
+    hidden, text-hidden, hiddenSpace<br>
+    <button class="but hidden">Button</button>
+    <button class="but alert large-sized text-hidden">Button</button>
+    <button class="but alert large-sized hiddenSpace">Button</button>
+    <button class="but alert large-sized text-hidden">Button</button>
+
+
+    <h2>Implement FontAwsomeIcons</h2>
+    <button class="but warning warning-icon sharp">Button</button>
+    <button class="but alert alert-icon sharp">Button</button>
+    <button class="but information information-icon sharp">Button</button>
+    <button class="but success success-icon sharp">Button</button>
+    <button class="but primary loading-icon sharp">Loading</button>
+    <button class="but primary refresh-icon sharp">Refreshing</button>
+    <br>Bug -> Default Button != white icons
+    <h2>ButtonGroup / Dropdown</h2>
+
+    <h2>3D, shadow</h2>
+    <h2>Sounds</h2>
+    <h2>VideoButtons</h2>
+    <h2>gradientButtons</h2>
+    <h2>PageElements</h2>
+</div>
+
 </body>
 </html>
