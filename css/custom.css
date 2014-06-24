@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic);
 
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');
+    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -25,6 +33,7 @@ body {
     -webkit-transition: color 150ms linear;
 
 }
+
 .but:hover {
     background-color: #f9f9f9;
     border: 1px solid silver;
@@ -78,7 +87,8 @@ body {
     height: 45px;
     font-size: 18px;
 }
-.full-width{
+
+.full-width {
     width: 100%;
 }
 
@@ -124,18 +134,21 @@ body {
     background-color: #FB3261;
     color: white;
     border: 1px #FB3261 solid;
+    transition: background-color 150ms linear;
 }
 
 .alert:hover {
     background-color: #FE527A;
     color: white;
     border: 1px #FE527A solid;
+    transition: background-color 150ms linear;
 }
 
 .alert:active {
     background-color: #FF7999;
     color: white;
     border: 1px #FF7999 solid;
+    transition: background-color 150ms linear;
 }
 
 .success {
@@ -265,91 +278,95 @@ body {
     color: transparent;
     border: transparent;
 }
-.warning-icon:before{
+
+.but.warning-icon:before, .text-only.warning-icon:before {
     font-family: FontAwesome;
     content: "\f071";
-    color:#f5f5f5;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 7px;
-    font-size: 16px;
-}
-.alert-icon:before{
-    font-family: FontAwesome;
-    content: "\f071";
-    color:#f5f5f5;
+    color: #778899;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
     font-size: 18px;
 }
-.small-sized.warning-icon:before{
+
+.warning.warning-icon:before, .alert.warning-icon:before, .information.warning-icon:before, .success.warning-icon:before,
+.primary.warning-icon:before, .secondary.warning-icon:before {
     font-family: FontAwesome;
     content: "\f071";
-    color:#f5f5f5;
+    color: #f5f5f5;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
     font-size: 16px;
 }
-.alert-icon:before{
+
+.but.alert-icon:before, .text-only.alert-icon:before {
     font-family: FontAwesome;
     content: "\f05c";
-    color:#f5f5f5;
+    color: #778899;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
     font-size: 18px;
 }
-.small-sized.alert-icon:before{
+
+.warning.alert-icon:before, .alert.alert-icon:before, .information.alert-icon:before, .success.alert-icon:before,
+.primary.alert-icon:before, .secondary.alert-icon:before {
     font-family: FontAwesome;
     content: "\f05c";
-    color:#f5f5f5;
+    color: #f5f5f5;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
     font-size: 18px;
 }
-.information-icon:before{
-    font-family: FontAwesome;
-    content: "\f05a";
-    color:#f5f5f5;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 7px;
-    font-size: 18px;
-}
-.small-sized.information-icon:before{
-    font-family: FontAwesome;
-    content: "\f05a";
-    color:#f5f5f5;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 7px;
-    font-size: 18px;
-}
-.success-icon:before{
+
+.but.information-icon:before, .text-only.information-icon:before {
     font-family: FontAwesome;
     content: "\f046";
-    color:#f5f5f5;
+    color: #778899;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
     font-size: 18px;
 }
-.small-sized.success-icon:before{
+
+.warning.information-icon:before, .alert.information-icon:before, .information.information-icon:before, .success.information-icon:before,
+.primary.information-icon:before, .secondary.information-icon:before {
     font-family: FontAwesome;
-    content: "\f046";
-    color:#f5f5f5;
+    content: "\f05a";
+    color: #f5f5f5;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
-    font-size: 16px;
+    font-size: 18px;
 }
-.loading-icon:before{
+
+.but.success-icon:before, .text-only.success-icon:before {
+    font-family: FontAwesome;
+    content: "\f046";
+    color: #778899;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+.warning.success-icon:before, .alert.success-icon:before, .information.success-icon:before, .success.success-icon:before,
+.primary.success-icon:before, .secondary.success-icon:before {
+    font-family: FontAwesome;
+    content: "\f046";
+    color: #f5f5f5;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+.but.loading-icon:before, .text-only.loading-icon:before {
     font-family: FontAwesome;
     content: "\f110";
-    color:#f5f5f5;
+    color: #778899;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
@@ -360,10 +377,12 @@ body {
     -o-animation: spin 2s infinite linear;
     animation: spin 2s infinite linear;
 }
-.refresh-icon:before{
+
+.warning.loading-icon:before, .alert.loading-icon:before, .information.loading-icon:before, .success.loading-icon:before,
+.primary.loading-icon:before, .secondary.loading-icon:before {
     font-family: FontAwesome;
-    content: "\f021";
-    color:#f5f5f5;
+    content: "\f110";
+    color: #f5f5f5;
     font-style: normal;
     font-weight: normal;
     margin-right: 7px;
@@ -373,5 +392,85 @@ body {
     -moz-animation: spin 2s infinite linear;
     -o-animation: spin 2s infinite linear;
     animation: spin 2s infinite linear;
+}
+
+.but.refresh-icon:before, crefresh-icon:before {
+    font-family: FontAwesome;
+    content: "\f021";
+    color: lightgray;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 7px;
+    font-size: 18px;
+
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+.warning.refresh-icon:before, .alert.refresh-icon:before, .information.refresh-icon:before, .success.refresh-icon:before,
+.primary.refresh-icon:before, .secondary.refresh-icon:before {
+    font-family: FontAwesome;
+    content: "\f021";
+    color: #f5f5f5;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 7px;
+    font-size: 18px;
+
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+.warning.grad {
+    color: #FFF;
+    border: 0px;
+    background: -moz-linear-gradient(top, rgba(255, 125, 64, 1) 1%, rgba(255, 125, 64, 1) 9%, rgba(255, 125, 64, 0.89) 24%, rgba(251, 111, 45, 0.7) 50%, rgba(243, 88, 14, 0.96) 94%, rgba(243, 88, 14, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 125, 64, 1)), color-stop(9%, rgba(255, 125, 64, 1)), color-stop(24%, rgba(255, 125, 64, 0.89)), color-stop(50%, rgba(251, 111, 45, 0.7)), color-stop(94%, rgba(243, 88, 14, 0.96)), color-stop(100%, rgba(243, 88, 14, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 125, 64, 1) 1%, rgba(255, 125, 64, 1) 9%, rgba(255, 125, 64, 0.89) 24%, rgba(251, 111, 45, 0.7) 50%, rgba(243, 88, 14, 0.96) 94%, rgba(243, 88, 14, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 125, 64, 1) 1%, rgba(255, 125, 64, 1) 9%, rgba(255, 125, 64, 0.89) 24%, rgba(251, 111, 45, 0.7) 50%, rgba(243, 88, 14, 0.96) 94%, rgba(243, 88, 14, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 125, 64, 1) 1%, rgba(255, 125, 64, 1) 9%, rgba(255, 125, 64, 0.89) 24%, rgba(251, 111, 45, 0.7) 50%, rgba(243, 88, 14, 0.96) 94%, rgba(243, 88, 14, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 125, 64, 1) 1%, rgba(255, 125, 64, 1) 9%, rgba(255, 125, 64, 0.89) 24%, rgba(251, 111, 45, 0.7) 50%, rgba(243, 88, 14, 0.96) 94%, rgba(243, 88, 14, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7d40', endColorstr='#f3580e', GradientType=0);
+}
+
+.warning.grad:hover {
+    background: -moz-linear-gradient(top, rgba(243, 88, 14, 1) 0%, rgba(243, 88, 14, 0.96) 6%, rgba(251, 111, 45, 0.7) 50%, rgba(255, 125, 64, 0.89) 76%, rgba(255, 125, 64, 1) 91%, rgba(255, 125, 64, 1) 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(243, 88, 14, 1)), color-stop(6%, rgba(243, 88, 14, 0.96)), color-stop(50%, rgba(251, 111, 45, 0.7)), color-stop(76%, rgba(255, 125, 64, 0.89)), color-stop(91%, rgba(255, 125, 64, 1)), color-stop(99%, rgba(255, 125, 64, 1)));
+    background: -webkit-linear-gradient(top, rgba(243, 88, 14, 1) 0%, rgba(243, 88, 14, 0.96) 6%, rgba(251, 111, 45, 0.7) 50%, rgba(255, 125, 64, 0.89) 76%, rgba(255, 125, 64, 1) 91%, rgba(255, 125, 64, 1) 99%);
+    background: -o-linear-gradient(top, rgba(243, 88, 14, 1) 0%, rgba(243, 88, 14, 0.96) 6%, rgba(251, 111, 45, 0.7) 50%, rgba(255, 125, 64, 0.89) 76%, rgba(255, 125, 64, 1) 91%, rgba(255, 125, 64, 1) 99%);
+    background: -ms-linear-gradient(top, rgba(243, 88, 14, 1) 0%, rgba(243, 88, 14, 0.96) 6%, rgba(251, 111, 45, 0.7) 50%, rgba(255, 125, 64, 0.89) 76%, rgba(255, 125, 64, 1) 91%, rgba(255, 125, 64, 1) 99%);
+    background: linear-gradient(to bottom, rgba(243, 88, 14, 1) 0%, rgba(243, 88, 14, 0.96) 6%, rgba(251, 111, 45, 0.7) 50%, rgba(255, 125, 64, 0.89) 76%, rgba(255, 125, 64, 1) 91%, rgba(255, 125, 64, 1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3580e', endColorstr='#ff7d40', GradientType=0);
+}
+.warning.grad:active{
+    background-color: #FF7D40;
+}
+.alert.grad{
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZiMzI2MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI0JSIgc3RvcC1jb2xvcj0iI2ZiMzI2MSIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZjkyMTUzIiBzdG9wLW9wYWNpdHk9IjAuNzkiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjZjUwMDM5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y1MDAzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(251,50,97,1) 1%, rgba(251,50,97,0.9) 24%, rgba(249,33,83,0.79) 50%, rgba(245,0,57,1) 99%, rgba(245,0,57,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(251,50,97,1)), color-stop(24%,rgba(251,50,97,0.9)), color-stop(50%,rgba(249,33,83,0.79)), color-stop(99%,rgba(245,0,57,1)), color-stop(100%,rgba(245,0,57,1)));
+    background: -webkit-linear-gradient(top,  rgba(251,50,97,1) 1%,rgba(251,50,97,0.9) 24%,rgba(249,33,83,0.79) 50%,rgba(245,0,57,1) 99%,rgba(245,0,57,1) 100%);
+    background: -o-linear-gradient(top,  rgba(251,50,97,1) 1%,rgba(251,50,97,0.9) 24%,rgba(249,33,83,0.79) 50%,rgba(245,0,57,1) 99%,rgba(245,0,57,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(251,50,97,1) 1%,rgba(251,50,97,0.9) 24%,rgba(249,33,83,0.79) 50%,rgba(245,0,57,1) 99%,rgba(245,0,57,1) 100%);
+    background: linear-gradient(to bottom,  rgba(251,50,97,1) 1%,rgba(251,50,97,0.9) 24%,rgba(249,33,83,0.79) 50%,rgba(245,0,57,1) 99%,rgba(245,0,57,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3261', endColorstr='#f50039',GradientType=0 );
+}
+.alert.grad:hover{
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1MDAzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZjUwMDM5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZjkyMTUzIiBzdG9wLW9wYWNpdHk9IjAuNzkiLz4KICAgIDxzdG9wIG9mZnNldD0iNzYlIiBzdG9wLWNvbG9yPSIjZmIzMjYxIiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmYjMyNjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(245,0,57,1) 0%, rgba(245,0,57,1) 1%, rgba(249,33,83,0.79) 50%, rgba(251,50,97,0.9) 76%, rgba(251,50,97,1) 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,0,57,1)), color-stop(1%,rgba(245,0,57,1)), color-stop(50%,rgba(249,33,83,0.79)), color-stop(76%,rgba(251,50,97,0.9)), color-stop(99%,rgba(251,50,97,1)));
+    background: -webkit-linear-gradient(top,  rgba(245,0,57,1) 0%,rgba(245,0,57,1) 1%,rgba(249,33,83,0.79) 50%,rgba(251,50,97,0.9) 76%,rgba(251,50,97,1) 99%);
+    background: -o-linear-gradient(top,  rgba(245,0,57,1) 0%,rgba(245,0,57,1) 1%,rgba(249,33,83,0.79) 50%,rgba(251,50,97,0.9) 76%,rgba(251,50,97,1) 99%);
+    background: -ms-linear-gradient(top,  rgba(245,0,57,1) 0%,rgba(245,0,57,1) 1%,rgba(249,33,83,0.79) 50%,rgba(251,50,97,0.9) 76%,rgba(251,50,97,1) 99%);
+    background: linear-gradient(to bottom,  rgba(245,0,57,1) 0%,rgba(245,0,57,1) 1%,rgba(249,33,83,0.79) 50%,rgba(251,50,97,0.9) 76%,rgba(251,50,97,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50039', endColorstr='#fb3261',GradientType=0 );
+
+}
+.alert.grad:active{
+    background-color: #F50039;
 }
 
