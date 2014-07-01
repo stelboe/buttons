@@ -705,3 +705,14 @@ background-color: #868AAA;
     background-color: transparent;
     color: #1085FF;
 }
+.page-nav{
+    min-width: 30px !important;
+    width:30px !important;
+    height: 30px !important;
+}
+.page-nav.left:before{
+    content:'\003C';
+}
+.page-nav.right:before{
+    content:'\003E';
+}
